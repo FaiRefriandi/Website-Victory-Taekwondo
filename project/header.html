@@ -1,0 +1,68 @@
+<header id="header" class="fixed top-0 left-0 right-0 bg-white drop-shadow-sm z-50
+         will-change-transform transition-transform duration-300 ease-out translate-y-0">
+  <div class="max-w-7xl mx-auto px-8 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-16">
+      <!-- Logo -->
+      <div class="flex items-center">
+        <a id="site-logo" href="index.html#tentang" class="block">
+          <img src="images/logo-event-victory/logo-head.svg" alt="Logo" class="h-10 md:h-12">
+        </a>
+      </div>
+      
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex space-x-8">
+        <button data-nav="slot1" class="nav-btn px-3 py-2 rounded-full text-sm font-bold transition-colors">
+          <span class="nav-label">Tentang</span>
+        </button>
+        <button data-nav="slot2" class="nav-btn px-3 py-2 rounded-full text-sm font-bold transition-colors">
+          <span class="nav-label">Event Kami</span>
+        </button>
+        <button data-nav="slot3" class="nav-btn px-3 py-2 rounded-full text-sm font-bold transition-colors">
+          <span class="nav-label">Sambutan</span>
+        </button>
+        <button data-nav="slot4" class="nav-btn px-3 py-2 rounded-full text-sm font-bold transition-colors">
+          <span class="nav-label">Galeri</span>
+        </button>
+        <!-- slot5 awalnya CTA -->
+        <a data-nav="slot5" href="pendaftaran.html" class="btn-kontak text-white px-4 py-2 rounded-full text-sm font-bold transition-colors">
+          <span class="nav-label">Pendaftaran</span>
+        </a>
+      </nav>
+
+      <!-- Mobile menu button -->
+      <div class="md:hidden">
+        <button id="mobile-menu-btn" aria-expanded="false" aria-controls="mobile-menu"
+          class="flex items-center gap-2 px-2.5 py-1.5 rounded-xl border border-gray-300
+                bg-white/90 text-gray-700 shadow-sm
+                hover:bg-gray-50 hover:border-gray-400 active:scale-[.98] transition md:hidden">
+          <span class="text-[14px] sm:text-[15px] font-semibold">Menu</span>
+
+          <!-- Pakai file SVG kamu sendiri -->
+          <img src="images/icon-header/icon-menu.svg"  alt="" class="icon-burger h-4 w-4 sm:h-5 sm:w-5 mt-0.5" />
+          <img src="images/icon-header/icon-close.svg" alt="" class="icon-close  h-4 w-4 sm:h-5 sm:w-5 mt-0.5" />
+        </button>
+      </div>
+
+      
+
+      <!-- Mobile menu -->
+      <div id="mobile-menu" class="mobile-menu hidden md:hidden space-y-2">
+        <button data-nav="slot1" class="block w-full text-left px-4 py-2 text-sm font-bold font-deskripsi nav-btn rounded-full">
+          <span class="nav-label">Tentang</span>
+        </button>
+        <button data-nav="slot2" class="block w-full text-left px-4 py-2 text-sm font-bold font-deskripsi nav-btn rounded-full">
+          <span class="nav-label">Event Kami</span>
+        </button>
+        <button data-nav="slot3" class="block w-full text-left px-4 py-2 text-sm font-bold font-deskripsi nav-btn rounded-full">
+          <span class="nav-label">Sambutan</span>
+        </button>
+        <button data-nav="slot4" class="block w-full text-left px-4 py-2 text-sm font-bold font-deskripsi nav-btn rounded-full">
+          <span class="nav-label">Galeri</span>
+        </button>
+        <a data-nav="slot5" href="pendaftaran.html" class="block w-full text-left px-4 py-2 text-sm font-bold font-deskripsi text-white btn-kontak rounded-full">
+          <span class="nav-label">Pendaftaran</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</header>

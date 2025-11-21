@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Victory National Open Taekwondo Championship — Event</title>
+
+  <!--script-->
+  <script>document.documentElement.classList.add('page-enter')</script>
+
+  <!-- Tailwind & Fonts -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,700&display=swap" rel="stylesheet" />
+</head>
+
+<body class="min-h-screen bg-white">
+  <!-- Header -->
+  <div id="header-mount"></div>
+
+  <main class="pt-16">
+<!-- ===================== HERO SECTION ===================== -->
+<section id="hero" class="relative bg-white py-16 scroll-mt-16">
+  <div class="relative z-10 max-w-7xl mx-auto px-8 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    <!-- Left column -->
+    <div class="space-y-6 order-1 lg:order-1">
+      <!-- Breadcrumb -->
+      <nav class="mb-1 md:mb-2 font-deskripsi" aria-label="Breadcrumb">
+        <ol class="flex items-center justify-center md:justify-start gap-2 text-xs sm:text-sm font-sumber text-gray-500">
+          <li><a href="index.html" class="hover:text-[#1E49BC]">Home</a></li>
+          <li aria-hidden="true" class="text-gray-300">/</li>
+          <li><a href="index.html#event" class="hover:text-[#1E49BC]">Kejuaraan</a></li>
+          <li aria-hidden="true" class="text-gray-300">/</li>
+          <li id="breadcrumb-current" class="text-gray-700 font-medium" aria-current="page">Event</li>
+        </ol>
+      </nav>
+
+      <!-- Logo + Title -->
+      <div class="flex items-center space-x-6">
+        <img src="images/logo-event-victory/logo-event2023.svg" alt="Victory Logo" class="w-42 h-auto md:w-54">
+      </div>
+
+      <!-- Date & Location (lebih kecil di mobile) -->
+      <div class="space-y-2 md:space-y-3 font-deskripsi sr text-sm md:text-base">
+        <div class="flex items-center space-x-2 md:space-x-3">
+          <img src="images/card-event/calendar.svg" class="w-4 h-4 md:w-5 md:h-5" alt="Date">
+          <span>24–25 Februari 2023</span>
+        </div>
+        <div class="flex items-center space-x-2 md:space-x-3">
+          <img src="images/card-event/location.svg" class="w-4 h-4 md:w-5 md:h-5" alt="Location">
+          <span>Gor Pajajaran Bandung, Jawa Barat</span>
+        </div>
+      </div>
+
+      <!-- Buttons (lebih kecil di mobile) -->
+      <div class="flex items-center space-x-4 md:space-x-6 mt-3 md:mt-4">
+        <a href="#"
+          class="px-4 py-2 md:px-6 md:py-3 rounded-full shadow-md font-semibold text-white text-sm md:text-base transition-colors font-deskripsi"
+          style="background-color:#9B9DA3;"
+          onmouseover="this.style.backgroundColor='#7f8085'"
+          onmouseout="this.style.backgroundColor='#9B9DA3'">
+          Pendaftaran
+        </a>
+
+        <a href="#" class="flex items-center text-blue-800 font-semibold hover:underline text-[13px] sm:text-sm md:text-base font-deskripsi">
+          Dokumentasi Pertandingan
+          <svg class="w-4 h-4 md:w-5 md:h-5 ml-1.5 md:ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </a>
+      </div>
+    </div>
+
+  <!-- wrapper -->
+  <div class="relative order-2 lg:order-2 mt-6 lg:mt-0 -mx-8 sm:-mx-6 md:mx-0">
+    <!-- slider -->
+    <div id="hero-slider"
+        class="relative overflow-hidden h-[260px] sm:h-[300px] md:h-[340px]
+                rounded-none shadow-none md:rounded-xl md:shadow-lg">
+      <!-- Slides -->
+      <div class="hero-slide active">
+        <img src="images/galeri/event2023/slide-event2023/slide-event2023-1.jpg" alt="Slide 1" class="w-full h-full object-cover">
+      </div>
+      <div class="hero-slide">
+        <img src="images/galeri/event2023/slide-event2023/slide-event2023-2.jpg" alt="Slide 2" class="w-full h-full object-cover">
+      </div>
+      <div class="hero-slide">
+        <img src="images/galeri/event2023/slide-event2023/slide-event2023-3.jpg" alt="Slide 3" class="w-full h-full object-cover">
+      </div>
+      <div class="hero-slide">
+        <img src="images/galeri/event2023/slide-event2023/slide-event2023-4.jpg" alt="Slide 4" class="w-full h-full object-cover">
+      </div>
+      <div class="hero-slide">
+        <img src="images/galeri/event2023/slide-event2023/slide-event2023-5.jpg" alt="Slide 5" class="w-full h-full object-cover">
+      </div>
+
+    <!-- Controls -->
+    <button id="hero-prev" class="hidden md:flex absolute left-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white rounded-full p-2 shadow">
+      <svg class="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+      </svg>
+    </button>
+    <button id="hero-next" class="hidden md:flex absolute right-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white rounded-full p-2 shadow">
+      <svg class="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+      </svg>
+    </button>
+    <!-- Indicators -->
+    <div id="hero-indicators" class="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2"></div>
+  </div>
+</div>
+
+  </div>
+
+  <!-- Decorative element top-right -->
+  <img src="images/border/border-3.svg" alt="Decor"    class="pointer-events-none select-none absolute top-0 right-0 w-36 sm:w-48 md:w-64 lg:w-72 h-auto z-0">
+
+  <!-- Sponsored Section with Infinite Marquee -->
+  <div class="mt-20
+            mx-4 sm:mx-8 md:mx-12 lg:mx-36 xl:mx-48
+            text-center relative
+            px-2 sm:px-12 md:px-20 lg:px-32">
+    <h2 class="text-2xl md:text-3xl font-bold mb-12 font-judul sr">Sponsored By</h2>
+    <div class="relative w-full overflow-hidden">
+      <div class="pointer-events-none absolute top-0 left-0 h-full w-8 sm:w-10 md:w-16 bg-gradient-to-r from-white via-white/40 to-transparent z-20"></div>
+      <div class="pointer-events-none absolute top-0 right-0 h-full w-8 sm:w-10 md:w-16 bg-gradient-to-l from-white via-white/40 to-transparent z-20"></div>
+
+      <div id="sponsor-marquee" class="marquee flex w-max gap-10 sm:gap-10 md:gap-28 lg:gap-32 xl:gap-36">
+        <!-- Logo sponsor -->
+        <img src="images/sponsor/sponsor2023/logo-sps-1.png" alt="Sponsor 1" class="h-12 object-contain" />
+        <img src="images/sponsor/sponsor2023/logo-sps-2.png" alt="Sponsor 2" class="h-12 object-contain" />
+        <img src="images/sponsor/sponsor2023/logo-sps-3.png" alt="Sponsor 3" class="h-12 object-contain" />
+        <img src="images/sponsor/sponsor2023/logo-sps-4.png" alt="Sponsor 4" class="h-12 object-contain" />
+        <img src="images/sponsor/sponsor2023/logo-sps-5.png" alt="Sponsor 5" class="h-12 object-contain" />
+        <img src="images/sponsor/sponsor2023/logo-sps-6.png" alt="Sponsor 6" class="h-12 object-contain" />
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===================== PRESTASI (Table Only, card centered) ===================== -->
+<section id="prestasi" class="relative py-20 bg-[#222222] overflow-hidden">
+  <!-- Dekor motif -->
+  <img src="images/border/border-2.svg"
+      class="absolute top-0 left-0 w-44 sm:w-40 md:w-52 lg:w-72 object-contain -z-10 pointer-events-none select-none" alt="">
+  <img src="images/border/border-3.svg"
+      class="absolute top-0 right-0 w-44 sm:w-40 md:w-52 lg:w-72 object-contain -z-10 pointer-events-none select-none" alt="">
+  <img src="images/border/border-1.svg"
+      class="absolute bottom-0 left-0 w-44 sm:w-40 md:w-52 lg:w-72 object-contain -z-10 pointer-events-none select-none" alt="">
+  <img src="images/border/border-4.svg"
+      class="absolute bottom-0 right-0 w-44 sm:w-40 md:w-52 lg:w-72 object-contain -z-10 pointer-events-none select-none" alt="">
+
+  <img src="images/dekorasi/bg-prestasi.png" class="absolute inset-0 w-full h-full object-cover opacity-20 pointer-events-none" alt="">
+
+  <div class="relative max-w-6xl mx-auto px-1 mb-10 sm:mb-0 md:mb-0 lg:mb-0 mt-10 sm:mt-0 md:mt-0 lg:mt-0 sm:px-6 lg:px-8">
+    <!-- Card -->
+    <div class="bg-white/95 backdrop-blur rounded-2xl shadow-xl ring-1 ring-black/5 overflow-hidden">
+      <!-- Header -->
+      <div class="px-6 md:px-8 pt-6 md:pt-8">
+        <h2 class="text-lg sm:text-xl md:text-[26px] font-bold font-judul sr">
+          Perolehan Medali 3rd VO 2025
+        </h2>
+        <!-- Controls -->
+        <div class="mt-5 grid grid-cols-1 gap-3 md:grid-cols-12 md:gap-4 md:items-center">
+         <!-- Search -->
+          <div class="relative md:col-span-6">
+            <!-- Ikon -->
+            <span class="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 pointer-events-none z-10">
+              <span class="block w-full h-full bg-gray-400"
+                    style="
+                      -webkit-mask: url('images/table/search-icon.svg') no-repeat center / contain;
+                              mask: url('images/table/search-icon.svg') no-repeat center / contain;
+                    "
+                    aria-hidden="true"></span>
+            </span>
+
+            <input id="search-input" type="text" placeholder="Cari nama peserta…"
+                  class="w-full pl-10 pr-3 py-2.5 rounded-lg border border-gray-200 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 text-[15px]">
+          </div>
+          <!-- Club Filter -->
+          <div class="relative md:col-span-3">
+            <select id="club-filter"
+                    class="w-full appearance-none pl-3 pr-10 py-2.5 rounded-lg border border-gray-200 bg-white focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 text-[15px]">
+              <option value="">Semua Club</option>
+            </select>
+            <span class="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-gray-400">
+              <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd"
+                  d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" clip-rule="evenodd"/></svg>
+            </span>
+          </div>
+
+          <!-- Kategori Filter -->
+          <div class="relative md:col-span-3">
+            <select id="category-filter"
+                    class="w-full appearance-none pl-3 pr-10 py-2.5 rounded-lg border border-gray-200 bg-white focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 text-[15px]">
+              <option value="">Pilih Kategori</option>
+            </select>
+            <span class="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-gray-400">
+              <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd"
+                  d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" clip-rule="evenodd"/></svg>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Table -->
+      <div class="px-4 md:px-6 pb-6 md:pb-8">
+        <div class="table-container bg-white rounded-xl border border-gray-100 mt-4">
+            <table class="w-full table-auto peserta-table">
+              <colgroup>
+                <col style="width:64px">          <!-- No -->
+                <col style="width:28%">           <!-- Nama Peserta -->
+                <col style="width:26%">           <!-- Kategori -->
+                <col style="width:26%">           <!-- Tim/Club -->
+                <col style="width:20%">           <!-- Prestasi -->
+              </colgroup>
+              <thead>
+                <tr class="bg-gray-50/80">
+                  <th class="px-4 py-3 text-left text-xs font-medium text-gray-600 uppercase tracking-wider">No</th>
+                  <th class="px-4 py-3 text-left text-xs font-medium text-gray-600 uppercase tracking-wider">Nama Peserta</th>
+                  <th class="px-4 py-3 text-left text-xs font-medium text-gray-600 uppercase tracking-wider">Kategori Pertandingan</th>
+                  <th class="px-4 py-3 text-left text-xs font-medium text-gray-600 uppercase tracking-wider">Tim/Club Taekwondo</th>
+                  <th class="px-4 py-3 text-left text-xs font-medium text-gray-600 uppercase tracking-wider">Prestasi Atlet</th>
+                </tr>
+              </thead>
+              <tbody id="participants-table" class="divide-y divide-gray-100">
+              </tbody>
+            </table>
+
+            <!-- No result -->
+            <div id="no-results" class="text-center py-8 text-gray-500 hidden">
+              Tidak ada peserta yang ditemukan
+            </div>
+          </div>            
+            <!-- Indikator scroll (MOBILE + TABLET) -->
+            <div class="lg:hidden mt-5 px-4" id="tbl-indicator" aria-hidden="true">
+              <div id="tbl-track" class="h-1.5 bg-gray-200 rounded-full overflow-hidden relative">
+                <div id="tbl-thumb"
+                    class="absolute left-0 top-0 h-full bg-[#1E49BC] rounded-full will-change-transform"
+                    style="width:30%; transform:translateX(0); transition:transform 120ms linear;"></div>
+              </div>
+              <div class="mt-1 text-[11px] font-deskripsi text-center">Geser tabel →</div>
+            </div>
+          <!--  Pagination -->
+            <div class="px-4 pb-4 pt-3">
+              <div class="flex flex-col items-center justify-center gap-3
+                          md:flex-row md:items-center md:justify-between md:gap-4
+                          text-center md:text-right">
+                <!-- Pagination (mobile-first) -->
+                <div id="pagination" class="flex items-center gap-2 order-1 md:order-2"></div>
+                <!-- Count -->
+                <div id="table-count" class="text-xs sm:text-[13px] text-gray-600 font-deskripsi order-2 md:order-1 md:self-start md:text-left">
+                  Menampilkan 0 data dari 0 data
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===================== TEAM PARTICIPATED ===================== -->
+<section>
+  <div class="team-participated mt-14 mb-16
+            mx-4 sm:mx-8 md:mx-20 lg:mx-36 xl:mx-48
+            text-center relative
+            px-2 sm:px-8 md:px-20 lg:px-32">
+    <h2 class="text-2xl md:text-3xl font-bold mb-10 font-judul sr">Team Participated</h2>
+
+    <div class="relative w-full overflow-hidden">
+      <!-- gradient pinggir lebih tipis di mobile -->
+      <div class="pointer-events-none absolute top-0 left-0 h-full w-8 sm:w-10 md:w-16 bg-gradient-to-r from-white via-white/40 to-transparent z-20"></div>
+      <div class="pointer-events-none absolute top-0 right-0 h-full w-8 sm:w-10 md:w-16 bg-gradient-to-l from-white via-white/40 to-transparent z-20"></div>
+
+      <!-- Mobile-only combined marquee -->
+      <div id="marquee-mobile"
+          class="marquee md:hidden flex w-max gap-8 sm:gap-10 animate-marquee-mobile mt-2"></div>
+
+      <!-- Baris 1 -->
+      <div class="marquee flex w-max gap-8 sm:gap-10 md:gap-20 animate-marquee-1 mb-10 sm:mb-16">
+        <img src="images/logo-team/logo-team-1.png"  class="object-contain" alt="">
+        <img src="images/logo-team/logo-team-2.png"  class="object-contain" alt="">
+        <img src="images/logo-team/logo-team-3.png"  class="object-contain" alt="">
+        <img src="images/logo-team/logo-team-4.png"  class="object-contain" alt="">
+        <img src="images/logo-team/logo-team-5.png"  class="object-contain" alt="">
+        <img src="images/logo-team/logo-team-6.png"  class="object-contain" alt="">
+        <img src="images/logo-team/logo-team-7.png"  class="object-contain" alt="">
+        <img src="images/logo-team/logo-team-8.png"  class="object-contain" alt="">
+        <img src="images/logo-team/logo-team-9.png"  class="object-contain" alt="">
+        <img src="images/logo-team/logo-team-10.png" class="object-contain" alt="">
+      </div>
+
+      <!-- Baris 2 -->
+      <div class="marquee hidden md:flex w-max gap-8 sm:gap-10 md:gap-20 animate-marquee-2 mt-2 sm:mt-5">
+        <img src="images/logo-team/logo-team-11.png" class="object-contain" alt="">
+        <img src="images/logo-team/logo-team-12.png" class="object-contain" alt="">
+        <img src="images/logo-team/logo-team-13.png" class="object-contain" alt="">
+        <img src="images/logo-team/logo-team-14.png" class="object-contain" alt="">
+        <img src="images/logo-team/logo-team-15.png" class="object-contain" alt="">
+        <img src="images/logo-team/logo-team-16.png" class="object-contain" alt="">
+        <img src="images/logo-team/logo-team-17.png" class="object-contain" alt="">
+        <img src="images/logo-team/logo-team-18.png" class="object-contain" alt="">
+        <img src="images/logo-team/logo-team-19.png" class="object-contain" alt="">
+        <img src="images/logo-team/logo-team-20.png" class="object-contain" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- ===================== TIMELINE ===================== -->
+<section id="timeline" class="relative bg-[#1E49BC] pt-20 pb-40 md:pb-48 overflow-hidden">
+  <!-- Dekor strip di BAWAH (full width) -->
+  <div aria-hidden="true" class="absolute inset-x-0 bottom-0 z-0">
+    <img src="images/dekorasi/timeline-decoration.svg"
+     alt=""
+     class="timeline-decoration
+            absolute bottom-0 left-1/2 -translate-x-1/2 z-0
+            block max-w-none
+            w-[170%] sm:w-[150%] md:w-[130%] lg:w-[66%]
+            h-auto object-contain
+            pointer-events-none select-none opacity-95
+            translate-y-1 md:translate-y-1 lg:translate-y-1">
+  </div>
+
+  <div class="relative z-10 max-w-7xl mx-auto px-8 sm:px-6 lg:px-8">
+    <h2 class="text-center text-white font-bold text-2xl md:text-3xl mb-12 font-judul sr">Timeline</h2>
+
+    <!-- Grid steps -->
+    <div class="timeline-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-8 text-white">
+
+      <!-- Step 1 -->
+      <div class="timeline-item relative">
+        <div class="relative flex items-center lg:block">
+          <!-- anchor di ikon -->
+          <span class="tl-anchor relative inline-flex items-center justify-center w-14 h-14 rounded-full bg-[#F6851F] shadow-lg">
+            <img src="images/icon-timeline/step1.svg" alt="Pendaftaran" class="w-7 h-7">
+          </span>
+          <!-- konektor tanpa left/width fixed (akan di-set via JS) -->
+          <span class="timeline-connector hidden lg:block absolute top-1/2 -translate-y-1/2 h-1 rounded-full pointer-events-none"></span>
+        </div>
+        <div class="mt-4">
+          <h3 class="leading-snug font-judul text-white sr">Pendaftaran Tim &amp; Peserta</h3>
+          <div class="mt-2 flex items-center text-sm opacity-90 font-deskripsi-2">
+            <img src="images/card-event/calendar.svg" class="w-4 h-4 mr-2" alt="">
+            <span>23 November 2022</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="timeline-item relative">
+        <div class="relative flex items-center lg:block">
+          <span class="tl-anchor relative inline-flex items-center justify-center w-14 h-14 rounded-full bg-[#F6851F] shadow-lg">
+            <img src="images/icon-timeline/step2.svg" alt="Deadline" class="w-7 h-7">
+          </span>
+          <span class="timeline-connector hidden lg:block absolute top-1/2 -translate-y-1/2 h-1 rounded-full pointer-events-none"></span>
+        </div>
+        <div class="mt-4">
+          <h3 class="font-judul leading-snug text-white sr">Batas Akhir Pendaftaran &amp; Pelunasan Biaya</h3>
+          <div class="mt-2 flex items-center text-sm opacity-90 font-deskripsi-2">
+            <img src="images/card-event/calendar.svg" class="w-4 h-4 mr-2" alt="">
+            <span>31 Januari 2023</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="timeline-item relative">
+        <div class="relative flex items-center lg:block">
+          <span class="tl-anchor relative inline-flex items-center justify-center w-14 h-14 rounded-full bg-[#F6851F] shadow-lg">
+            <img src="images/icon-timeline/step3.svg" alt="Registrasi" class="w-7 h-7">
+          </span>
+          <span class="timeline-connector hidden lg:block absolute top-1/2 -translate-y-1/2 h-1 rounded-full pointer-events-none"></span>
+        </div>
+        <div class="mt-4">
+          <h3 class="font-judul leading-snug text-white sr">Registrasi &amp; Penimbangan Atlet</h3>
+          <div class="mt-2 flex items-center text-sm opacity-90 font-deskripsi-2">
+            <img src="images/card-event/calendar.svg" class="w-4 h-4 mr-2" alt="">
+            <span>17 Februari 2023</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="timeline-item relative">
+        <div class="relative flex items-center lg:block">
+          <span class="tl-anchor relative inline-flex items-center justify-center w-14 h-14 rounded-full bg-[#F6851F] shadow-lg">
+            <img src="images/icon-timeline/step4.svg" alt="Poomsae" class="w-7 h-7">
+          </span>
+          <span class="timeline-connector hidden lg:block absolute top-1/2 -translate-y-1/2 h-1 rounded-full pointer-events-none"></span>
+        </div>
+        <div class="mt-4">
+          <h3 class="font-judul leading-snug text-white sr">Day-1 Pelaksanaan Pertandingan Poomsae</h3>
+          <div class="mt-2 flex items-center text-sm opacity-90 font-deskripsi-2">
+            <img src="images/card-event/calendar.svg" class="w-4 h-4 mr-2" alt="">
+            <span>18 Februari 2023</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 5 (tanpa connector) -->
+      <div class="timeline-item relative">
+        <div class="relative flex items-center lg:block">
+          <span class="tl-anchor relative inline-flex items-center justify-center w-14 h-14 rounded-full bg-[#F6851F] shadow-lg">
+            <img src="images/icon-timeline/step5.svg" alt="Kyorugi" class="w-7 h-7">
+          </span>
+        </div>
+        <div class="mt-4">
+          <h3 class="font-judul leading-snug text-white sr">Day-2 Pelaksanaan Kyorugi &amp; Pembagian Medali</h3>
+          <div class="mt-2 flex items-center text-sm opacity-90 font-deskripsi-2">
+            <img src="images/card-event/calendar.svg" class="w-4 h-4 mr-2" alt="">
+            <span>19 Februari 2023</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ===================== BERKAS KEJUARAAN ===================== -->
+<section id="berkas" class="relative z-10 py-20 bg-white overflow-hidden">
+  <!-- Background SVG -->
+  <img src="images/berkas/icon-berkas/bg.svg"
+       alt="" aria-hidden="true"
+       class="absolute inset-0 w-full h-full object-cover opacity-80 pointer-events-none select-none">
+    <div class="relative max-w-7xl mx-auto px-8 sm:px-6 lg:px-8">
+      <h2 class="text-center font-judul text-2xl md:text-3xl font-bold mb-10 sr">
+        Berkas Kejuaraan
+      </h2>
+
+    <!-- items-start -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 items-start">
+
+      <!-- Kartu kiri -->
+      <div class="bg-white rounded-2xl shadow-xl ring-1 ring-black/5 overflow-hidden pb-8">
+        <div class="px-6 py-4 flex items-center gap-2 text-[#24366A] font-semibold font-judul">
+          <img src="images/berkas/icon-berkas/formulir.svg" alt="" class="w-5 h-5">
+          <span>Informasi Kejuaraan</span>
+        </div>
+
+        <ul>
+          <li class="px-4 sm:px-6 py-2 md:py-3
+           grid grid-cols-[minmax(0,1fr)_auto]
+           items-center gap-3
+           min-h-[48px] md:min-h-[56px]
+           border-b border-gray-100 mx-3 sm:mx-5 md:mx-6 last:border-none">
+          <!-- Judul dokumen -->
+          <span class="min-w-0 text-[15px] leading-snug font-deskripsi">
+            Persyaratan Peserta
+          </span>
+            <!-- Tombol unduh -->
+            <a href="#" download
+              class="self-center shrink-0 inline-flex items-center gap-1.5
+                      px-3 py-1.5 rounded-md text-sm font-deskripsi
+                      bg-[#E9F1FF] text-[#24366A] border border-[#E3ECFF]
+                      hover:bg-[#dbe7ff] whitespace-nowrap">
+              Unduh
+              <img src="images/berkas/icon-berkas/unduh.svg" alt="" class="w-4 h-4">
+            </a>
+          </li>
+          <li class="px-4 sm:px-6 py-2 md:py-3
+           grid grid-cols-[minmax(0,1fr)_auto]
+           items-center gap-3
+           min-h-[48px] md:min-h-[56px]
+           border-b border-gray-100 mx-3 sm:mx-5 md:mx-6 last:border-none">
+          <!-- Judul dokumen -->
+          <span class="min-w-0 text-[15px] leading-snug font-deskripsi">
+            Bentuk &amp; Sistem Pertandingan
+          </span>
+            <!-- Tombol unduh -->
+            <a href="#" download
+              class="self-center shrink-0 inline-flex items-center gap-1.5
+                      px-3 py-1.5 rounded-md text-sm font-deskripsi
+                      bg-[#E9F1FF] text-[#24366A] border border-[#E3ECFF]
+                      hover:bg-[#dbe7ff] whitespace-nowrap">
+              Unduh
+              <img src="images/berkas/icon-berkas/unduh.svg" alt="" class="w-4 h-4">
+            </a>
+          </li>
+          <li class="px-4 sm:px-6 py-2 md:py-3
+           grid grid-cols-[minmax(0,1fr)_auto]
+           items-center gap-3
+           min-h-[48px] md:min-h-[56px]
+           border-b border-gray-100 mx-3 sm:mx-5 md:mx-6 last:border-none">
+          <!-- Judul dokumen -->
+          <span class="min-w-0 text-[15px] leading-snug font-deskripsi">
+            Kategori &amp; Kelas Kejuaraan
+          </span>
+            <!-- Tombol unduh -->
+            <a href="#" download
+              class="self-center shrink-0 inline-flex items-center gap-1.5
+                      px-3 py-1.5 rounded-md text-sm font-deskripsi
+                      bg-[#E9F1FF] text-[#24366A] border border-[#E3ECFF]
+                      hover:bg-[#dbe7ff] whitespace-nowrap">
+              Unduh
+              <img src="images/berkas/icon-berkas/unduh.svg" alt="" class="w-4 h-4">
+            </a>
+          </li>
+          <li class="px-4 sm:px-6 py-2 md:py-3
+           grid grid-cols-[minmax(0,1fr)_auto]
+           items-center gap-3
+           min-h-[48px] md:min-h-[56px]
+           border-b border-gray-100 mx-3 sm:mx-5 md:mx-6 last:border-none">
+          <!-- Judul dokumen -->
+          <span class="min-w-0 text-[15px] leading-snug font-deskripsi">
+            Biaya Pendaftaran
+          </span>
+            <!-- Tombol unduh -->
+            <a href="#" download
+              class="self-center shrink-0 inline-flex items-center gap-1.5
+                      px-3 py-1.5 rounded-md text-sm font-deskripsi
+                      bg-[#E9F1FF] text-[#24366A] border border-[#E3ECFF]
+                      hover:bg-[#dbe7ff] whitespace-nowrap">
+              Unduh
+              <img src="images/berkas/icon-berkas/unduh.svg" alt="" class="w-4 h-4">
+            </a>
+          </li>
+          <li class="px-4 sm:px-6 py-2 md:py-3
+           grid grid-cols-[minmax(0,1fr)_auto]
+           items-center gap-3
+           min-h-[48px] md:min-h-[56px]
+           border-b border-gray-100 mx-3 sm:mx-5 md:mx-6">
+          <!-- Judul dokumen -->
+          <span class="min-w-0 text-[15px] leading-snug font-deskripsi">
+            Hadiah &amp; Penghargaan
+          </span>
+            <!-- Tombol unduh -->
+            <a href="#" download
+              class="self-center shrink-0 inline-flex items-center gap-1.5
+                      px-3 py-1.5 rounded-md text-sm font-deskripsi
+                      bg-[#E9F1FF] text-[#24366A] border border-[#E3ECFF]
+                      hover:bg-[#dbe7ff] whitespace-nowrap">
+              Unduh
+              <img src="images/berkas/icon-berkas/unduh.svg" alt="" class="w-4 h-4">
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Kartu kanan -->
+      <div class="bg-white rounded-2xl shadow-xl ring-1 ring-black/5 overflow-hidden pb-8">
+        <div class="px-6 py-4 flex items-center gap-2 text-[#24366A] font-semibold font-judul">
+          <img src="images/berkas/icon-berkas/informasi.svg" alt="" class="w-5 h-5">
+          <span>Petunjuk &amp; Formulir</span>
+        </div>
+        <ul>
+          <li class="px-4 sm:px-6 py-2 md:py-3
+           grid grid-cols-[minmax(0,1fr)_auto]
+           items-center gap-3
+           min-h-[48px] md:min-h-[56px]
+           border-b border-gray-100 mx-3 sm:mx-5 md:mx-6 last:border-none">
+          <!-- Judul dokumen -->
+          <span class="min-w-0 text-[15px] leading-snug font-deskripsi">
+            Petunjuk Pendaftaran Tim &amp; Atlet
+          </span>
+            <!-- Tombol unduh -->
+            <a href="#" download
+              class="self-center shrink-0 inline-flex items-center gap-1.5
+                      px-3 py-1.5 rounded-md text-sm font-deskripsi
+                      bg-[#E9F1FF] text-[#24366A] border border-[#E3ECFF]
+                      hover:bg-[#dbe7ff] whitespace-nowrap">
+              Unduh
+              <img src="images/berkas/icon-berkas/unduh.svg" alt="" class="w-4 h-4">
+            </a>
+          </li>
+          <li class="px-4 sm:px-6 py-2 md:py-3
+           grid grid-cols-[minmax(0,1fr)_auto]
+           items-center gap-3
+           min-h-[48px] md:min-h-[56px]
+           border-b border-gray-100 mx-3 sm:mx-5 md:mx-6 last:border-none">
+          <!-- Judul dokumen -->
+          <span class="min-w-0 text-[15px] leading-snug font-deskripsi">
+            Surat Pernyataan Orang Tua/Wali (ICTU/Junior)
+          </span>
+            <!-- Tombol unduh -->
+            <a href="#" download
+              class="self-center shrink-0 inline-flex items-center gap-1.5
+                      px-3 py-1.5 rounded-md text-sm font-deskripsi
+                      bg-[#E9F1FF] text-[#24366A] border border-[#E3ECFF]
+                      hover:bg-[#dbe7ff] whitespace-nowrap">
+              Unduh
+              <img src="images/berkas/icon-berkas/unduh.svg" alt="" class="w-4 h-4">
+            </a>
+          </li>
+          <li class="px-4 sm:px-6 py-2 md:py-3
+           grid grid-cols-[minmax(0,1fr)_auto]
+           items-center gap-3
+           min-h-[48px] md:min-h-[56px]
+           border-b border-gray-100 mx-3 sm:mx-5 md:mx-6 last:border-none">
+          <!-- Judul dokumen -->
+          <span class="min-w-0 text-[15px] leading-snug font-deskripsi">
+            Surat Pernyataan Atlet Senior/Master
+          </span>
+            <!-- Tombol unduh -->
+            <a href="#" download
+              class="self-center shrink-0 inline-flex items-center gap-1.5
+                      px-3 py-1.5 rounded-md text-sm font-deskripsi
+                      bg-[#E9F1FF] text-[#24366A] border border-[#E3ECFF]
+                      hover:bg-[#dbe7ff] whitespace-nowrap">
+              Unduh
+              <img src="images/berkas/icon-berkas/unduh.svg" alt="" class="w-4 h-4">
+            </a>
+          </li>
+          <li class="px-4 sm:px-6 py-2 md:py-3
+           grid grid-cols-[minmax(0,1fr)_auto]
+           items-center gap-3
+           min-h-[48px] md:min-h-[56px]
+           border-b border-gray-100 mx-3 sm:mx-5 md:mx-6">
+          <!-- Judul dokumen -->
+          <span class="min-w-0 text-[15px] leading-snug font-deskripsi">
+            Surat Pernyataan Tim
+          </span>
+            <!-- Tombol unduh -->
+            <a href="#" download
+              class="self-center shrink-0 inline-flex items-center gap-1.5
+                      px-3 py-1.5 rounded-md text-sm font-deskripsi
+                      bg-[#E9F1FF] text-[#24366A] border border-[#E3ECFF]
+                      hover:bg-[#dbe7ff] whitespace-nowrap">
+              Unduh
+              <img src="images/berkas/icon-berkas/unduh.svg" alt="" class="w-4 h-4">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-[#F3F6FA] text-gray-800 border-t border-gray-200 mt-0 relative">
+  <!-- Konten utama -->
+  <div class="max-w-7xl mx-auto px-8 sm:px-6 lg:px-8 pt-12 pb-24 md:pb-32">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+      <!-- Kiri -->
+      <div class="space-y-6 sr-stagger">
+        <div class="flex items-center space-x-4">
+          <img src="images/logo-event-victory/logo-head.svg" class="h-20" alt="Logo">
+        </div>
+        <p class="text-sm leading-relaxed font-deskripsi sr">
+          Victory National Open Taekwondo Championship adalah kejuaraan tahunan berskala nasional yang telah diselenggarakan sejak 2023. 
+          Ajang ini menjadi ruang pembinaan, sportivitas, dan prestasi bagi taekwondoin dari berbagai usia.
+        </p>
+        <!-- Sponsor + dekor tengah -->
+        <div class="flex items-center">
+          <img src="images/sponsor/hero-footer/sps-2.png" class="h-12" alt="Sponsor">
+
+          <!-- Dekor tengah: nempel ke kanan sponsor -->
+          <img
+            src="images/footer/tengah.svg"
+            alt=""
+            aria-hidden="true"
+            class="hidden sm:block sm:ml-16 sm:h-16 sm:w-16 md:h-20 md:w-20 lg:h-24 lg:w-24"
+          />
+        </div>
+
+      </div>
+
+      <!-- Kanan -->
+      <div class="space-y-6 md:pl-24 relative sr-stagger">
+        <!-- Dekor kiri judul -->
+        <div class="relative md:flex md:items-center md:gap-3">
+          <img src="images/footer/atas.svg" alt="Decor Kontak"
+              class="absolute left-[-25px] sm:left-[-22px] top-1
+                      h-5 w-5 sm:h-6 sm:w-6
+                      md:static md:left-auto md:top-auto
+                      md:h-10 md:w-10 md:mr-3 select-none pointer-events-none" />
+          <h1 class="font-judul font-bold text-[#1E49BC]
+                    text-[25px] sm:text-2xl md:text-3xl">
+            Kontak Kami
+          </h1>
+        </div>
+
+        <!-- Container detail kontak: sejajar dengan heading -->
+        <div id="footer-contact"
+            class="mt-1 md:mt-6 space-y-4 md:space-y-5 ml-0 pl-0 md:pl-20 font-deskripsi">
+          <!-- Lokasi -->
+          <div class="grid grid-cols-[auto,1fr] items-start gap-3">
+            <img src="images/footer/location.svg" alt="" class="w-5 h-5 md:w-6 md:h-6">
+            <div class="text-[15px] sm:text-base leading-relaxed">
+              <p class="font-semibold">Victory Center</p>
+              <p>Gor Vapor Jln Banteng Dalam No 8, Turangga,</p>
+              <p>Kec. Lengkong Kota Bandung Jawa Barat 40264</p>
+            </div>
+          </div>
+
+          <!-- Telepon -->
+          <div class="grid grid-cols-[auto,1fr] items-start gap-3">
+            <img src="images/footer/phone.svg" alt="" class="w-5 h-5 md:w-6 md:h-6">
+            <p class="text-[15px] sm:text-base leading-relaxed">
+              <span class="font-semibold">Phone</span> +62 81224502323
+            </p>
+          </div>
+
+          <!-- Email -->
+          <div class="grid grid-cols-[auto,1fr] items-start gap-3">
+            <img src="images/footer/email.svg" alt="" class="w-5 h-5 md:w-6 md:h-6">
+            <p class="text-[15px] sm:text-base leading-relaxed">
+              <span class="font-semibold">Email</span> victorytkdbdg@gmail.com
+            </p>
+          </div>
+
+          <!-- Website -->
+          <div class="grid grid-cols-[auto,1fr] items-start gap-3">
+            <img src="images/footer/website.svg" alt="" class="w-5 h-5 md:w-6 md:h-6">
+            <p class="text-[15px] sm:text-base leading-relaxed">
+              <span class="font-semibold">Website</span>
+              <a href="https://victorytaekwondo.id" class="text-[#1E49BC] underline-offset-2 hover:underline">
+                victorytaekwondo.id
+              </a>
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Dekorasi sudut kiri & kanan -->
+  <img src="images/footer/kiri.svg"
+       class="absolute bottom-20 left-0 w-20 h-20 md:w-24 md:h-24"
+       alt="Decor Left">
+  <img src="images/footer/kanan.svg"
+       class="absolute bottom-24 right-16 w-20 h-20 md:w-24 md:h-24"
+       alt="Decor Right">
+
+  <!-- Copyright -->
+  <div class="bg-gray-800 text-center py-10 relative z-10">
+    <p class="text-sm sm:text-base font-deskripsi text-center">
+      © Victory National Open Taekwondo Championship 2025. All Rights Reserved.
+    </p>
+  </div>
+</footer>
+
+  <!-- Inject header -->
+  <script>
+    // Inject header
+    fetch('header.html')
+    .then(r => r.text())
+    .then(html => {
+      document.getElementById('header-mount').innerHTML = html;
+      if (window.initHeaderMenu) window.initHeaderMenu();
+
+      // Urutan tombol di header.html (desktop & mobile):
+      // [0] Tentang, [1] Event Kami, [2] Sambutan, [3] Galeri, [CTA] Pendaftaran
+      const map = [
+        { text: 'Tentang',     target: 'hero'      }, 
+        { text: 'Prestasi',    target: 'prestasi'  },
+        { text: 'Timeline',    target: 'timeline'  },
+        { text: 'Berkas',      target: 'berkas'    },
+      ];
+      const last = { text: 'Hubungi Kami', target: 'footer-contact' };
+
+      // helper ganti label + aksi scroll
+      function wire(el, label, target){
+        if(!el) return;
+        el.textContent = label;            // ganti teks
+        el.removeAttribute('onclick'); 
+        el.removeAttribute('href');        // cegah pindah halaman
+        el.addEventListener('click', (e)=>{
+          e.preventDefault();
+          if (typeof scrollToSection === 'function') {
+            scrollToSection(target);
+          } else {
+            location.hash = '#' + target;
+          }
+        });
+      }
+
+      // anchor "Hubungi Kami"
+      (function ensureFooterAnchor(){
+        if(!document.getElementById('footer-contact')){
+          const foot = document.querySelector('footer');
+          if(foot){
+            const anchor = document.createElement('div');
+            anchor.id = 'footer-contact';
+            anchor.style.position = 'relative';
+            anchor.style.top = '-64px'; 
+            foot.prepend(anchor);
+          }
+        }
+      })();
+
+      // Desktop
+      const desktopBtns = document.querySelectorAll('header nav .nav-btn'); // 4 button
+      desktopBtns.forEach((btn, i)=> wire(btn, map[i].text, map[i].target));
+      const desktopCTA  = document.querySelector('header nav .btn-kontak'); // anchor CTA
+      wire(desktopCTA, last.text, last.target);
+
+      // Mobile
+      const mobileBtns = document.querySelectorAll('#mobile-menu .nav-btn'); // 4 button
+      mobileBtns.forEach((btn, i)=> wire(btn, map[i].text, map[i].target));
+      const mobileCTA  = document.querySelector('#mobile-menu .btn-kontak');
+      wire(mobileCTA, last.text, last.target);
+    })
+    .catch(e => console.error('Gagal memuat header:', e));
+
+    // Dynamic hero content berdasarkan ?id
+    (function () {
+      const params = new URLSearchParams(location.search);
+      const id = params.get('id');
+
+      const EVENTS = {
+        "2023": {
+          title: "1st Victory National Open Taekwondo Championship 2023",
+          subtitle: "24–25 Februari 2023 · Gor Pajajaran, Bandung",
+          hero: "images/2023-hero.jpg"
+        },
+        "2024": {
+          title: "2nd Victory National Open Taekwondo Championship 2024",
+          subtitle: "24–25 Februari 2024 · Gor Laga Tangkas, Bandung",
+          hero: "images/2024-hero.jpg"
+        },
+        "2025": {
+          title: "3rd Victory National Open Taekwondo Championship 2025",
+          subtitle: "24–25 Februari 2025 · Gor Pajajaran, Bandung",
+          hero: "images/2025-hero.jpg"
+        }
+      };
+
+      const data = EVENTS[id];
+      const titleEl = document.getElementById('event-title');
+      const subEl   = document.getElementById('event-subtitle');
+      const heroEl  = document.getElementById('event-hero');
+
+      if (data) {
+        titleEl.textContent = data.title;
+        subEl.textContent   = data.subtitle;
+        if (data.hero) { heroEl.src = data.hero; heroEl.alt = data.title; }
+        document.title = data.title + " — Victory Championship";
+      } else {
+        // default subtitle jika id tidak dikenali
+        subEl.textContent = "Jadwal & detail event akan diumumkan.";
+      }
+    })();
+  </script>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const root = document.documentElement;
+      root.classList.remove('page-enter');
+      root.classList.add('page-loaded');
+    });
+  </script>
+
+  <script>
+    (function(){
+      // Observer yang nembak sekali saat elemen masuk viewport
+      const io = new IntersectionObserver((entries)=>{
+        entries.forEach((e)=>{
+          if(e.isIntersecting){
+            // kalau parent punya .sr-stagger
+            if(e.target.classList.contains('sr-stagger')){
+              e.target.classList.add('is-visible');
+            }else{
+              e.target.classList.add('is-visible');
+            }
+            io.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.12, rootMargin: "0px 0px -8% 0px" });
+
+      // Setup stagger index untuk tiap grup
+      document.querySelectorAll('.sr-stagger').forEach(group=>{
+        const items = Array.from(group.children).filter(el => el.nodeType === 1);
+        items.forEach((el, i)=> el.style.setProperty('--i', i));
+        io.observe(group);
+      });
+
+      // Observe item single
+      document.querySelectorAll('.sr').forEach(el=> io.observe(el));
+    })();
+  </script>
+
+  <script>
+(function(){
+  // mobile
+  const MOBILE_BP = 768;
+
+  const table = document.querySelector('table.peserta-table');
+  if (!table) return;
+
+  const theadRow = table.tHead ? table.tHead.rows[0] : null;
+  const tbody    = table.tBodies[0];
+
+  // index 0-based: [No(0), Nama(1), Kategori(2), Tim(3), Prestasi(4)]
+  const MAP_DESKTOP = [0,1,2,3,4];
+  const MAP_MOBILE  = [0,1,4,2,3]; // → No, Nama, Prestasi, Kategori, Tim
+
+  function snapshotRow(row){
+    if (!row._cellsOriginal) {
+      row._cellsOriginal = Array.from(row.children); 
+    }
+  }
+
+  function reorderRow(row, map){
+    snapshotRow(row);
+    const frag = document.createDocumentFragment();
+    map.forEach(i => {
+      const cell = row._cellsOriginal[i];
+      if (cell) frag.appendChild(cell);
+    });
+    row.appendChild(frag);
+  }
+
+  function apply(map){
+    if (theadRow) reorderRow(theadRow, map);
+    if (tbody) Array.from(tbody.rows).forEach(tr => reorderRow(tr, map));
+  }
+
+  function isMobile(){ return window.innerWidth < MOBILE_BP; }
+
+  function update(){
+    const want = isMobile() ? 'mobile' : 'desktop';
+    const state = table.getAttribute('data-order-state') || 'desktop';
+    if (want === state) return;
+    if (want === 'mobile') apply(MAP_MOBILE);
+    else apply(MAP_DESKTOP);
+    table.setAttribute('data-order-state', want);
+  }
+
+  // urutkan otomatis begitu rows muncul
+  if (tbody) {
+    const mo = new MutationObserver((muts)=>{
+      if (table.getAttribute('data-order-state') === 'mobile') {
+        Array.from(tbody.rows).forEach(tr => {
+          if (!tr._cellsOriginal) tr._cellsOriginal = Array.from(tr.children); // simpan urutan asli
+          reorderRow(tr, MAP_MOBILE);
+        });
+      }
+    });
+    mo.observe(tbody, { childList: true });
+  }
+
+  window.addEventListener('resize', update);
+  window.addEventListener('DOMContentLoaded', update);
+  update();
+})();
+</script>
+
+<script>
+(function(){
+  const tbody = document.getElementById('participants-table');
+  if (!tbody) return;
+
+  const mq = window.matchMedia('(max-width: 640px)');
+
+  function limitRows(){
+    const isMobile = mq.matches;
+    const rows = Array.from(tbody.querySelectorAll('tr'));
+    rows.forEach((tr, i) => {
+      tr.style.display = (isMobile && i >= 5) ? 'none' : '';
+    });
+  }
+
+  // initial & on resize breakpoint change
+  limitRows();
+  mq.addEventListener('change', limitRows);
+
+  // re-apply whenever rows are re-rendered (search/filter/pagination)
+  const obs = new MutationObserver(limitRows);
+  obs.observe(tbody, { childList: true });
+})();
+</script>
+
+<script>
+(function(){
+  const table   = document.querySelector('#prestasi table');
+  const track   = document.getElementById('tbl-track');
+  const thumb   = document.getElementById('tbl-thumb');
+  const wrap    = document.getElementById('tbl-indicator');
+  if (!table || !track || !thumb || !wrap) return;
+
+  // Temukan elemen yang benar-benar melakukan horizontal scroll
+  function findScroller(el){
+    let n = el;
+    while(n && n !== document.body){
+      n = n.parentElement;
+      if(!n) break;
+      const cs = getComputedStyle(n);
+      if (n.scrollWidth > n.clientWidth + 1 &&
+          /(auto|scroll|overlay)/.test(cs.overflowX)) return n;
+    }
+    return null;
+  }
+
+  const scroller = findScroller(table);
+  if(!scroller){ wrap.classList.add('hidden'); return; }
+
+  function refresh(){
+    const sw = scroller.scrollWidth;
+    const vw = scroller.clientWidth;
+    const overflow = sw - vw;
+
+    // Tidak ada overflow - sembunyikan indikator
+    if (overflow <= 1){
+      wrap.classList.add('hidden');
+      return;
+    }
+    wrap.classList.remove('hidden');
+
+    // Lebar track & ukuran thumb
+    const trackW = track.clientWidth;
+    const ratio  = Math.max(0.06, Math.min(1, vw / sw));
+    const thumbW = Math.round(trackW * ratio);
+    thumb.style.width = thumbW + 'px';
+
+    // Posisi thumb
+    const maxLeft = trackW - thumbW;
+    let left = (scroller.scrollLeft / overflow) * maxLeft;
+
+    // Snap biar pas banget di ujung
+    if (scroller.scrollLeft <= 1) left = 0;
+    else if (scroller.scrollLeft >= overflow - 1) left = maxLeft;
+
+    thumb.style.transform = `translate3d(${Math.round(left)}px,0,0)`;
+  }
+
+  scroller.addEventListener('scroll', refresh, { passive: true });
+  window.addEventListener('resize', refresh);
+
+  if ('ResizeObserver' in window){
+    const ro = new ResizeObserver(refresh);
+    ro.observe(scroller);
+    ro.observe(table);
+    ro.observe(track);
+  }
+
+  // Init beberapa kali untuk cover render async
+  requestAnimationFrame(refresh);
+  setTimeout(refresh, 80);
+  setTimeout(refresh, 300);
+})();
+</script>
+
+<script src="script.js"></script>
+</body>
+</html>

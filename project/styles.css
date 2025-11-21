@@ -1,0 +1,787 @@
+::-webkit-scrollbar {
+  display: none;
+}
+html {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge lama */
+}
+/* HERO slider */
+.hero-slide{
+  position:absolute; inset:0; opacity:0;
+  transition:opacity .5s ease-in-out;
+}
+.hero-slide.active{ opacity:1; }
+
+.hero-indicator{
+  display:block; width:32px; height:4px;
+  background: rgba(255,255,255,.6);
+  border-radius: 9999px;
+  box-shadow: 0 0 0 1px rgba(0,0,0,.06) inset;
+}
+.hero-indicator.active{
+  background: rgba(255,255,255,.95);
+}
+
+.btn-kontak {
+    background-color: #2E4183;
+    font-family: 'Mulish', sans-serif;
+}
+
+.btn-kontak:hover {
+    background-color: #24366A;
+}
+
+.nav-btn {
+    color: #161B1F;
+    font-family: 'Mulish', sans-serif;
+    font-style: bold;
+}
+
+.nav-btn:hover {
+    color: #1f2d5e;
+    background-color: #f9fafb;
+}
+
+.nav-btn.active {
+  background-color: #f3f4f6 !important;
+  color: #2E4183 !important;
+}
+
+.font-judul {
+    font-family: 'Newsreader', serif;
+    color: #24366A;
+}
+
+.garis-pisah {
+    background-color: #24366A;
+}
+
+.font-deskripsi {
+    font-family: 'Mulish', sans-serif;
+    color: #636D75;
+}
+
+.font-quotes {
+    font-family: 'Newsreader', serif;
+    color: #24366A;
+}
+
+.font-judul-2 {
+    color: white;
+    font-family: 'Newsreader', serif;
+}
+
+.font-deskripsi-2 {
+    font-family: 'Mulish', sans-serif;
+    color: white;
+}
+
+
+/* Carousel styles */
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-slide.active {
+    opacity: 1;
+}
+
+.indicator.active {
+    background-color: white;
+}
+
+.indicator:not(.active) {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.thumbnail.active {
+    border-color: white; /* Tailwind red-500 */
+    opacity: 1;
+}
+
+/*table*/
+/* Untuk table peserta */
+.table-container {
+    overflow-x: auto;
+    margin-top: 1rem;
+}
+
+
+table.peserta-table {
+    font-size: 0.8125rem;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table.peserta-table th,
+table.peserta-table td {
+    white-space: nowrap;
+    padding: 0.5rem 1.25rem;
+    border-bottom: 1px solid #e5e7eb;
+    text-align: left;
+}
+
+#pagination button {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.875rem;
+    border-radius: 0.375rem;
+    background-color: #e5e7eb;
+    color: #374151;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+#pagination button:hover {
+    background-color: #d1d5db;
+}
+
+#pagination button.active {
+    background-color: #2E4183;;
+    color: white;
+}
+
+#pagination {
+  padding-top: 1rem;
+}
+
+#pagination-btn.active {
+    background-color: #1e3a8a; 
+    color: white;
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  table.peserta-table tbody {
+    font-size: 0.75rem; /* 12px */
+  }
+  table.peserta-table th,
+  table.peserta-table td {
+    padding: 0.5rem 0.75rem;
+  }
+}
+
+/* ===== Prestasi: Scroll Indicator di Tablet ===== */
+@media (min-width: 641px) and (max-width: 1023.98px) {
+  #prestasi .table-container {
+    position: relative;
+  }
+
+  #prestasi .scroll-indicator {
+    display: block;
+    position: absolute;
+    bottom: 0.25rem; 
+    left: 50%;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 40%;
+    border-radius: 9999px;
+    background: #e5e7eb; 
+    overflow: hidden;
+  }
+
+  #prestasi .scroll-indicator-bar {
+    height: 100%;
+    background: #262626; 
+    width: 0%;
+    transition: width 0.2s ease;
+  }
+}
+
+
+/* khusus section Prestasi */
+#prestasi #table-scroll { overflow-x: auto; }
+#prestasi #table-scroll > div { overflow: visible; }
+
+
+/* Gallery hover effects */
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.gallery-item img {
+    transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.gallery-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery-item:hover .gallery-overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.gallery-overlay-content {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center;
+    color: white;
+}
+
+.gallery-item:hover .gallery-overlay-content {
+    opacity: 1;
+}
+
+
+/* Prestasi badge colors */
+.prestasi-juara-1 {
+    color: #d97706;
+    background-color: #fef3c7;
+}
+
+.prestasi-juara-2 {
+    color: #6b7280;
+    background-color: #f9fafb;
+}
+
+.prestasi-juara-3 {
+    color: #ea580c;
+    background-color: #fed7aa;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+
+@keyframes marquee {
+  0% {
+    transform: translateX(1%);
+  }
+  100% {
+    transform: translateX(-15%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 20s linear infinite;
+}
+
+/* Bergerak dari kiri ke kanan */
+@keyframes marquee-left {
+  0% {
+    transform: translateX(-15%);
+  }
+  100% {
+    transform: translateX(1%);
+  }
+}
+
+.animate-marquee-1 {
+  animation: marquee-left 25s linear infinite;
+}
+
+/* Bergerak dari kanan ke kiri */
+@keyframes marquee-right {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-10%);
+  }
+}
+
+.animate-marquee-2 {
+  animation: marquee-right 25s linear infinite;
+}
+
+/* Mobile menu styles */
+@media (max-width: 768px) {
+    .mobile-menu {
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: white;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        padding: 1rem;
+    }
+    
+    .mobile-menu.hidden {
+        display: none;
+    }
+}
+
+/* Table responsive styles */
+@media (max-width: 640px) {
+    .table-container {
+        overflow-x: auto;
+    }
+    
+    table {
+        min-width: 600px;
+    }
+}
+
+/* Mobile menu – super smooth */
+.mobile-menu{
+  position: absolute;
+  top: 100%; left: 0; right: 0;
+  background: white;
+  box-shadow: 0 12px 28px -12px rgba(0,0,0,.18);
+  border-bottom-left-radius: .75rem;
+  border-bottom-right-radius: .75rem;
+
+  /* state awal (tertutup) */
+  opacity: 0;
+  transform: translate3d(0,-6px,0); 
+  pointer-events: none;
+  visibility: hidden;
+
+  /* transisi */
+  transition:
+    opacity .28s cubic-bezier(.2,.7,.3,1),
+    transform .28s cubic-bezier(.2,.7,.3,1),
+    visibility 0s linear .28s;   
+
+  will-change: opacity, transform;
+  contain: content;             
+}
+
+.mobile-menu.show{
+  opacity: 1;
+  transform: translate3d(0,0,0);
+  pointer-events: auto;
+  visibility: visible;
+  transition:
+    opacity .28s cubic-bezier(.2,.7,.3,1),
+    transform .28s cubic-bezier(.2,.7,.3,1),
+    visibility 0s linear 0s;   
+}
+
+/* .hidden tetap buat state benar-benar hilang */
+.mobile-menu.hidden{ display:none; }
+
+
+@media (prefers-reduced-motion: reduce){
+  .mobile-menu{ transition: none !important; transform: none !important; opacity: 1 !important; }
+}
+
+
+/* sembunyikan scrollbar di track horizontal */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* konektor default */
+.timeline-connector{
+  position: absolute;
+  overflow: hidden;
+  background: transparent; 
+  z-index: 0;
+}
+.timeline-connector::after{
+  content: none;
+}
+#timeline.is-inview .timeline-connector::after{
+  content: "";
+  position: absolute; inset: 0;
+  background-color: #F4B32C;
+  border-radius: 9999px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: tl-draw 350ms ease-out forwards; 
+  animation-delay: var(--delay, 0ms);
+  will-change: transform;
+}
+@keyframes tl-draw { to { transform: scaleX(1); } }
+
+/* ikon (anchor) di atas garis */
+.tl-anchor { position: relative; z-index: 10; }
+
+/* Event: track dengan gutter kiri */
+#event-track{
+  /* */
+  padding-left: 0 !important;
+  padding-right: 1rem; 
+  position: relative;
+}
+
+/* Spacer di awal track */
+#event-track::before{
+  content: "";
+  flex: 0 0 1rem;             
+}
+
+/* Desktop */
+@media (min-width: 1024px){
+  #event-track::before{
+    flex-basis: calc((100vw - 80rem)/2 + 2rem);
+  }
+}
+
+/* ===== TIMELINE: Mobile/Tablet (vertikal) ===== */
+@media (max-width: 1023.98px) {
+  #timeline .timeline-grid{
+    position: relative;
+    padding-left: 1rem; 
+  }
+
+  #timeline .timeline-item{
+    display: grid;
+    grid-template-columns: 56px 1fr;
+    column-gap: .75rem;              
+    position: relative;
+  }
+
+  #timeline .timeline-item .tl-anchor{
+    grid-column: 1;
+    justify-self: center;
+    position: relative;
+    z-index: 10;
+  }
+
+  #timeline .timeline-item > .mt-4{
+    grid-column: 2;
+    margin-top: .25rem; 
+  }
+
+  /* connector vertikal */
+  #timeline .timeline-connector{
+    display: block !important;
+    position: absolute;
+    margin-top: 2.2rem;  
+    left: 1.65rem; 
+    width: 3px;
+    background: transparent;
+    overflow: hidden;
+    z-index: 0;
+  }
+
+  /* Animasi segmen (bertahap) */
+  #timeline .timeline-connector::after{
+    content: none;
+  }
+
+
+  #timeline.is-inview .timeline-connector::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: #F4B32C;
+    border-radius: 9999px;
+    transform: scaleY(0);
+    transform-origin: top;
+    animation: tl-draw-vert 400ms ease-out forwards;
+    animation-delay: var(--delay, 0ms);
+    will-change: transform;
+  }
+
+  #timeline .timeline-item:last-child .timeline-connector{
+    display: none !important;
+  }
+  }
+
+@keyframes tl-draw-vert {
+  to { transform: scaleY(1); }
+}
+
+/* ===== TIMELINE: Tablet (hide connectors) ===== */
+@media (min-width: 641px) and (max-width: 1023.98px) {
+  #timeline .timeline-connector {
+    display: none !important;
+  }
+}
+
+/* ===================== PAGE LOAD TRANSITION ===================== */
+/* ===== Simple Page Intro (fade + blur + lift) ===== */
+body *:not(#header):not(#header *){
+  transition:
+    opacity .42s ease,
+    transform .50s cubic-bezier(.22,.61,.36,1),
+    filter .50s ease;
+  will-change: opacity, transform, filter;
+}
+
+/* State awal: semua elemen transparan, blur */
+:where(html.page-enter) :where(body *, body *::before, body *::after){
+  opacity: 0;
+  transform: translateY(6px) scale(.995);
+  filter: blur(6px);
+}
+
+/* State loaded: pulihkan */
+:where(html.page-loaded) :where(body *, body *::before, body *::after){
+  opacity: 1;
+  transform: none;
+  filter: none;
+  transition:
+    opacity 0.9s ease 0.08s,
+    transform 1.05s cubic-bezier(.16,1,.3,1) 0.08s,
+    filter 1.05s ease 0.08s;
+}
+
+@media (prefers-reduced-motion: reduce){
+  :where(html) :where(body *, body *::before, body *::after){
+    transition: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
+  }
+}
+
+:where([data-no-intro]),
+:where([data-no-intro] *){
+  opacity: 1 !important;
+  transform: none !important;
+  filter: none !important;
+  transition: none !important;
+}
+
+/* ================== SCROLL REVEAL ================== */
+:root{
+  --sr-distance: 16px;                 /* seberapa jauh gerak awal */
+  --sr-blur: 6px;                      /* blur awal */
+  --sr-duration: 0.9s;                 /* durasi 1 item */
+  --sr-duration-move: 1.05s;           /* durasi transform/blur */
+  --sr-ease: cubic-bezier(.16,1,.3,1); /* easing */
+  --sr-interval: .08s;                 /* jeda antar item saat stagger */
+}
+
+/* State awal (sembunyi) */
+.sr,
+.sr-stagger > *{
+  opacity: 0;
+  transform: translateY(var(--sr-distance));
+  filter: blur(var(--sr-blur));
+  transition:
+    opacity var(--sr-duration) ease,
+    transform var(--sr-duration-move) var(--sr-ease),
+    filter calc(var(--sr-duration-move) * .9) ease;
+  will-change: opacity, transform, filter;
+}
+
+/* Saat terlihat */
+.sr.is-visible,
+.sr-stagger.is-visible > *{
+  opacity: 1;
+  transform: none;
+  filter: none;
+}
+
+.sr-stagger > *{
+  transition-delay: calc(var(--i, 0) * var(--sr-interval));
+}
+
+/* Variasi arah */
+.sr-left{ transform: translateX(-var(--sr-distance)); }
+.sr-right{ transform: translateX(var(--sr-distance)); }
+.sr-zoom{ transform: scale(.96); }
+
+:where(html.page-loaded) :where(.sr, .sr-stagger > *){
+  opacity: 0 !important;
+  transform: translateY(var(--sr-distance)) !important;
+  filter: blur(var(--sr-blur)) !important;
+}
+:where(html.page-loaded) :where(.sr.is-visible, .sr-stagger.is-visible > *){
+  opacity: 1 !important;
+  transform: none !important;
+  filter: none !important;
+}
+
+@media (prefers-reduced-motion: reduce){
+  .sr, .sr-stagger > *{
+    transition: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
+  }
+}
+
+/* ===================== HEADER FIXED  ===================== */
+#header *,
+#header-mount,
+#header-mount *{
+  opacity: 1 !important;
+  filter: none !important;
+}
+
+#header{
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 9999;
+  backface-visibility: hidden;
+  transform: translateZ(0); 
+  isolation: isolate;
+}
+
+/* Tinggi header */
+main { padding-top: 64px; }
+[id] { scroll-margin-top: 72px; }
+
+
+#header-mount{ position: relative; z-index: 9999; display: contents; }
+
+
+/* Team Participated */
+.team-participated .marquee img{
+  height: 36px;            /* mobile */
+}
+@media (min-width: 640px){  /* sm */
+  .team-participated .marquee img{ height: 50px; }
+}
+@media (min-width: 768px){  /* md */
+  .team-participated .marquee img{ height: 66px; }
+}
+@media (min-width: 1024px){ /* lg (desktop) */
+  .team-participated .marquee img{ height: 82px; }
+}
+
+
+/* === Sticky Header: show/hide on scroll === */
+#header{
+  transition: transform .32s cubic-bezier(.16,1,.3,1), box-shadow .2s ease, background-color .2s ease;
+  will-change: transform;
+}
+
+#header.header-hidden {
+  transform: translateY(-100%) !important;
+}
+#header {
+  transform: translateY(0) !important;
+}
+
+#header.header-solid {
+  box-shadow: 0 6px 14px rgba(0,0,0,.08);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #header { transition: none; }
+}
+
+/* Toggle ikon burger */
+#mobile-menu-btn .icon-close { display: none; }
+
+#mobile-menu-btn[aria-expanded="true"] .icon-burger { display: none; }
+#mobile-menu-btn[aria-expanded="true"] .icon-close  { display: inline-block; }
+
+/*animasi saat ganti ikon */
+#mobile-menu-btn .icon-burger,
+#mobile-menu-btn .icon-close {
+  transition: transform .2s ease, opacity .2s ease;
+}
+#mobile-menu-btn[aria-expanded="true"] .icon-burger { opacity: 0; transform: rotate(-90deg) scale(.9); }
+#mobile-menu-btn[aria-expanded="true"] .icon-close  { opacity: 1; transform: rotate(0deg)    scale(1);  }
+
+/* ===== Gallery Modal ===== */
+#gallery-modal{
+  opacity: 0;
+  transition: opacity .24s cubic-bezier(.2,.7,.3,1);
+}
+#gallery-modal.show{ opacity: 1; }
+
+/* Kunci scroll body ketika modal terbuka */
+body.modal-open{ overflow: hidden; }
+
+#gallery-close{ z-index: 2; }
+
+/* Pause/resume marquee saat diklik */
+.marquee { cursor: pointer; }
+
+/* Ketika diklik (class ditoggle via JS) */
+.marquee.is-paused {
+  animation-play-state: paused !important;
+}
+
+.marquee { cursor: pointer; }
+.marquee.is-paused { animation-play-state: paused !important; }
+
+/* Marquee mobile: geser 0% -> -50% supaya 1 putaran menampilkan semua logo */
+@keyframes marquee-mobile {
+  0%   { transform: translateX(0%); }
+  100% { transform: translateX(-50%); } /* karena konten kita gandakan jadi 2x */
+}
+.animate-marquee-mobile {
+  animation: marquee-mobile 1s linear infinite;
+}
+
+.marquee { cursor: pointer; }
+.marquee.is-paused { animation-play-state: paused !important; }
+
+/* ==== Infinite Marquee ==== */
+.mq-runner{ display:inline-flex; will-change: transform; }
+.mq-track{ display:inline-flex; align-items:center; gap: var(--mq-gap, 32px); }
+
+/* Bergerak ke kiri */
+@keyframes mq-left {
+  to { transform: translateX(calc(var(--mq-distance, 500px) * -1)); }
+}
+.mq-anim-left {
+  animation: mq-left var(--mq-duration, 30s) linear infinite;
+}
+
+/* Pause/resume by class (klik) */
+.marquee { cursor:pointer; }
+.marquee.is-paused .mq-anim-left { animation-play-state: paused; }
+
+/* Mobile combined marquee (kalau dipakai) */
+@keyframes marquee-mobile {
+  0%   { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+.animate-marquee-mobile { animation: marquee-mobile 500s linear infinite; }
+
+/* === Marquee spacing/sizing rules === */
+#sponsor-marquee img { height: 3rem; } /* desktop default */
+@media (max-width: 767.98px) {
+  #sponsor-marquee img { height: 2.5rem; } /* mobile lebih kecil */
+}
+
+/* Team Participated (mobile row gabungan) */
+.team-participated #marquee-mobile img { height: 3.5rem; }
+
+/* Full-bleed hero */
+@media (max-width: 1023.98px){
+  #hero-slider { touch-action: pan-y; }
+}
+
+
+/* ==== Team Participated (<1024px) ==== */
+@media (max-width: 1023.98px) {
+
+  .team-participated #marquee-mobile img {
+    height: 5.1rem !important;
+  }
+
+  /* Jaga-jaga kalau row1/row2 tidak disembunyikan di beberapa ukuran */
+  .team-participated .marquee img {
+    height: 4rem !important;
+  }
+}
+
+
+
+
+
+
+

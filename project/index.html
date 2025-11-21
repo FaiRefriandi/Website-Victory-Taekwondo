@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Victory National Open Taekwondo Championship</title>
+
+  <!--script-->
+  <script>document.documentElement.classList.add('page-enter')</script>
+
+  <!-- Tailwind & Fonts -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,700&display=swap" rel="stylesheet" />
+</head>
+
+<body class="min-h-screen bg-white">
+  <!-- Header -->
+  <div id="header-mount"></div>
+  <main class="pt-16">
+    
+<!-- Hero / Intro -->
+<section id="tentang" class="relative py-16 scroll-mt-16">
+  <!-- Dekor sudut -->
+  <img src="images/border/border-hero1.png" 
+      alt="dekor kiri atas" 
+      class="absolute top-0 left-0 w-32 sm:w-48 md:w-60 lg:w-72 pointer-events-none select-none"/>
+  <img src="images/border/border-hero2.png" 
+    alt="dekor kanan bawah" 
+    class="hidden sm:block absolute right-0
+           bottom-[-7rem] md:bottom-[-9rem] lg:bottom-[-11rem] xl:bottom-[-14rem]
+           w-24 sm:w-32 md:w-40 lg:w-48
+           pointer-events-none select-none z-0" />
+
+  <div class="max-w-7xl mx-auto px-8 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-8 items-center">
+    <!-- teks center di mobile, left di desktop -->
+    <div class="text-center md:text-left">
+      <!-- BREADCRUMB -->
+      <nav class="mb-3 md:mb-4" aria-label="Breadcrumb">
+        <ol class="flex items-center justify-center md:justify-start gap-2 text-xs sm:text-sm font-sumber text-gray-500">
+          <li><a href="index.html" class="hover:text-[#1E49BC] font-deskripsi">Home</a></li>
+          <li aria-hidden="true" class="text-gray-300">/</li>
+          <li class="text-gray-700 font-medium font-deskripsi" aria-current="page">Kejuaraan</li>
+        </ol>
+      </nav>
+
+      <!-- judul diperkecil di mobile -->
+      <h1 class="text-2xl sm:text-4xl md:text-5xl font-bold font-judul mb-4 sr">
+        Victory National Open Taekwondo Championship
+      </h1>
+
+      <!-- garis pisah auto-center di mobile -->
+      <div class="w-24 h-1 garis-pisah mb-6 mx-auto md:mx-0"></div>
+
+      <!-- paragraf diperkecil di mobile -->
+      <p class="font-deskripsi sm:text-lg leading-relaxed sr sr-left">
+        Merupakan ajang kejuaraan terbuka berskala nasional yang menjadi wadah pembinaan dan pengembangan prestasi taekwondoin dari berbagai kategori usia. Dengan semangat sportivitas dan kompetisi sehat, kejuaraan ini mendorong para peserta untuk tampil maksimal, menjunjung nilai kejujuran, disiplin, serta membangun karakter melalui prestasi.
+      </p>
+
+      <p class="text-[12px] sm:text-sm md:text-base leading-normal sm:leading-relaxed font-deskripsi mt-6 sm:mt-10 sr">
+        Diselenggarakan oleh:
+        <a href="https://www.victorytaekwondo.id/" target="_blank" class="font-bold text-[#F4841F] hover:opacity-80">
+          Victory Taekwondo Club Bandung
+        </a>
+      </p>
+
+    </div>
+
+    <!-- Wrapper gambar: full-bleed + cegah overflow di mobile -->
+    <div class="relative -mx-6 sm:-mx-6 md:mx-0 overflow-hidden md:overflow-visible">
+
+      <img src="images/dekorasi/banner-bw.png" alt="Banner"
+          class="block transform-gpu
+                  w-[calc(100%+8px)]  ml-3.5
+                  sm:w-[calc(100%+12px)] sm:ml-3
+                  md:w-full md:ml-0" />
+      <img src="images/sponsor/hero-footer/sps-1.png" alt="Sponsor strip" class="block w-full h-auto mt-4" />
+    </div>
+
+  </div>
+</section>
+
+    <!-- Card List  -->
+    <section id="event" class="pt-5 pb-10 md:pt-28">
+    <div class="w-full px-2 sm:px-6 lg:px-4">
+      <div class="relative mb-6">
+      <h2 class="mb-7 text-2xl md:text-3xl font-bold font-judul text-center sr">Event Kami</h2>
+      <div class="relative">
+        <!-- track horizontal -->
+        <div id="event-track"
+          class="no-scrollbar flex gap-6 overflow-x-auto snap-x snap-mandatory scroll-smooth pb-2
+                pl-4 sm:pl-6
+                lg:pl-[calc((100vw-80rem)/2+2rem)]
+                [scroll-padding-left:1rem] sm:[scroll-padding-left:1.5rem]
+                lg:[scroll-padding-left:calc((100vw-80rem)/2+2rem)]">
+          <!-- Card 2023 -->
+          <a href="event.html?id=2023"
+            class="group relative min-w-[280px] md:min-w-[340px] max-w-[360px] bg-white rounded-2xl overflow-hidden
+                    shadow-[0_3px_12px_rgba(16,24,40,.08)]
+                    hover:shadow-[0_10px_25px_rgba(16,24,40,.15)] transition-all snap-start">
+            <img src="images/card-event/thumbnail-card1.png" alt="Event 2023" class="w-full h-44 object-cover">
+            <div class="p-5">
+              <h3 class="text-[1.1rem] leading-snug font-semibold font-judul">1st Victory National Open 2023</h3>
+              <div class="mt-3 space-y-2 text-[13.5px] font-deskripsi">
+                <div class="flex items-center gap-2">
+                  <img src="images/card-event/calendar.svg" class="w-4 h-4 fon" alt="">
+                  <span>24–25 Februari 2023</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <img src="images/card-event/location.svg" class="w-4 h-4" alt="">
+                  <span>Gor Pajajaran Bandung, Jawa Barat.</span>
+                </div>
+              </div>
+              <div class="mt-4 text-sm font-semibold text-[#0E50A2] font-deskripsi flex items-center gap-1">
+                Selengkapnya
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </div>
+            </div>
+            <!-- garis biru muncul saat hover -->
+            <div class="absolute bottom-0 left-0 right-0 h-[6px] bg-[#1E49BC] scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></div>
+          </a>
+
+          <!-- Card 2024 -->
+          <a href="#"
+            class="group relative min-w-[280px] md:min-w-[340px] max-w-[360px] bg-white rounded-2xl overflow-hidden
+                    shadow-[0_3px_12px_rgba(16,24,40,.08)]
+                    hover:shadow-[0_10px_25px_rgba(16,24,40,.15)] transition-all snap-start">
+            <img src="images/card-event/thumbnail-card2.png" alt="Event 2024" class="w-full h-44 object-cover">
+            <div class="p-5">
+              <h3 class="text-[1.1rem] leading-snug font-semibold font-judul">2nd Victory National Open 2024</h3>
+              <div class="mt-3 space-y-2 text-[13.5px] font-deskripsi">
+                <div class="flex items-center gap-2">
+                  <img src="images/card-event/calendar.svg" class="w-4 h-4" alt="">
+                  <span>24–25 Februari 2024</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <img src="images/card-event/location.svg" class="w-4 h-4" alt="">
+                  <span>Gor Laga Tangkas, Bandung.</span>
+                </div>
+              </div>
+              <div class="mt-4 text-sm font-semibold text-[#0E50A2] font-deskripsi flex items-center gap-1">
+                Selengkapnya
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </div>
+            </div>
+            <div class="absolute bottom-0 left-0 right-0 h-[6px] bg-[#1E49BC] scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></div>
+          </a>
+
+          <!-- Card 2025 -->
+          <a href="#"
+            class="group relative min-w-[280px] md:min-w-[340px] max-w-[360px] bg-white rounded-2xl overflow-hidden
+                    shadow-[0_3px_12px_rgba(16,24,40,.08)]
+                    hover:shadow-[0_10px_25px_rgba(16,24,40,.15)] transition-all snap-start">
+            <img src="images/card-event/thumbnail-card2.png" alt="Event 2025" class="w-full h-44 object-cover">
+            <div class="p-5">
+              <h3 class="text-[1.1rem] leading-snug font-semibold font-judul">3rd Victory National Open 2025</h3>
+              <div class="mt-3 space-y-2 text-[13.5px] font-deskripsi">
+                <div class="flex items-center gap-2">
+                  <img src="images/card-event/calendar.svg" class="w-4 h-4" alt="">
+                  <span>24–25 Februari 2025</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <img src="images/card-event/location.svg" class="w-4 h-4" alt="">
+                  <span>Gor Pajajaran, Bandung.</span>
+                </div>
+              </div>
+              <div class="mt-4 text-sm font-semibold text-[#0E50A2] font-deskripsi flex items-center gap-1">
+                Selengkapnya
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </div>
+            </div>
+            <div class="absolute bottom-0 left-0 right-0 h-[6px] bg-[#1E49BC] scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></div>
+          </a>
+
+          <!-- Card 2026 -->
+          <a href="#"
+            class="group relative min-w-[280px] md:min-w-[340px] max-w-[360px] bg-white rounded-2xl overflow-hidden
+                    shadow-[0_3px_12px_rgba(16,24,40,.08)]
+                    hover:shadow-[0_10px_25px_rgba(16,24,40,.15)] transition-all snap-start">
+            <img src="images/card-event/thumbnail-card1.png" alt="Event 2026" class="w-full h-44 object-cover">
+            <div class="p-5">
+              <h3 class="text-[1.1rem] leading-snug font-semibold font-judul">4th Victory National Open 2026</h3>
+              <div class="mt-3 space-y-2 text-[13.5px] font-deskripsi">
+                <div class="flex items-center gap-2">
+                  <img src="images/card-event/calendar.svg" class="w-4 h-4" alt="">
+                  <span>24–25 Februari 2026</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <img src="images/card-event/location.svg" class="w-4 h-4" alt="">
+                  <span>Bandung, Jawa Barat.</span>
+                </div>
+              </div>
+              <div class="mt-4 text-sm font-semibold text-[#0E50A2] font-deskripsi flex items-center gap-1">
+                Selengkapnya
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </div>
+            </div>
+            <div class="absolute bottom-0 left-0 right-0 h-[6px] bg-[#1E49BC] scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></div>
+          </a>
+          <!-- Card 2027 -->
+          <a href="#"
+            class="group relative min-w-[280px] md:min-w-[340px] max-w-[360px] bg-white rounded-2xl overflow-hidden
+                    shadow-[0_3px_12px_rgba(16,24,40,.08)]
+                    hover:shadow-[0_10px_25px_rgba(16,24,40,.15)] transition-all snap-start">
+            <img src="images/card-event/thumbnail-card1.png" alt="Event 2026" class="w-full h-44 object-cover">
+            <div class="p-5">
+              <h3 class="text-[1.1rem] leading-snug font-semibold font-judul">4th Victory National Open 2027</h3>
+              <div class="mt-3 space-y-2 text-[13.5px] font-deskripsi">
+                <div class="flex items-center gap-2">
+                  <img src="images/card-event/calendar.svg" class="w-4 h-4" alt="">
+                  <span>24–25 Februari 2027</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <img src="images/card-event/location.svg" class="w-4 h-4" alt="">
+                  <span>Bandung, Jawa Barat.</span>
+                </div>
+              </div>
+              <div class="mt-4 text-sm font-semibold text-[#0E50A2] font-deskripsi flex items-center gap-1">
+                Selengkapnya
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </div>
+            </div>
+            <div class="absolute bottom-0 left-0 right-0 h-[6px] bg-[#1E49BC] scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></div>
+          </a>
+      </div>
+      <!-- tombol navigasi bawah (desktop only) -->
+        <div class="mt-5 hidden md:flex justify-center gap-3">
+          <button id="event-prev"
+            class="w-10 h-10 rounded-full border border-gray-300 bg-white shadow-sm hover:bg-gray-50 flex items-center justify-center">
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+          </button>
+          <button id="event-next"
+            class="w-10 h-10 rounded-full border border-gray-300 bg-white shadow-sm hover:bg-gray-50 flex items-center justify-center">
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+
+        <!-- indikator slider (mobile only) -->
+        <div id="event-dots" class="mt-4 md:hidden flex items-center justify-center gap-2" aria-label="Pagination"></div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Quote Banner -->
+<section class="py-12 bg-[#EFD115]">
+  <div class="max-w-7xl mx-auto px-8 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-center gap-1 md:gap-16">
+      <img src="images/dekorasi/quote-decoration.png" 
+           alt="Motif kiri" 
+           class="h-16 md:h-20 shrink-0 select-none pointer-events-none" />
+      <h3 class="font-judul font-bold text-[#1E49BC]
+                 text-[20px] sm:text-2xl md:text-3xl lg:text-4xl
+                 leading-tight text-center sr quote-clamp">
+        “Membangun Akhlak dengan Prestasi”
+      </h3>
+
+      <!-- gambar kanan -->
+      <img src="images/dekorasi/quote-decoration.png" 
+           alt="Motif kanan" 
+           class="h-16 md:h-20 shrink-0 select-none pointer-events-none" />
+    </div>
+  </div>
+</section>
+
+
+<!-- Sambutan Kwan Jang Nim -->
+<section id="sambutan" class="pt-16 pb-0 mb-12 sm:mb-16 md:mb-0">
+  <div class="max-w-7xl mx-auto px-8 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-start">
+      <!-- Foto kiri -->
+      <div class="md:col-span-4 flex justify-center md:justify-start">
+        <img
+          src="images/kwanjang.png"
+          alt="Kwan Jang Nim Victory"
+          class="w-[250px] md:w-[290px] lg:w-[330px] object-contain select-none"
+        />
+      </div>
+
+      <!-- Teks kanan -->
+      <div class="md:col-span-7">
+        <h3 class="font-judul text-2xl md:text-3xl font-bold text-[#1E49BC] mb-4 sr">
+          Sambutan Kwan Jang Nim Victory
+        </h3>
+
+        <div class="space-y-5 leading-6 font-deskripsi sr sr-stagger">
+          <p><span class="italic">Salam Olahraga, Salam Tae Kwon Do.</span></p>
+
+          <p>
+            Puji dan syukur kepada Allah SWT, kejuaraan
+            <span class="italic">Victory National Open Taekwondo Championship</span>
+            merupakan wujud visi dan misi klub kami untuk menciptakan bibit-bibit baru
+            dalam cabang olahraga Taekwondo. Kejuaraan ini menjadi ruang untuk membangun
+            atmosfer sportivitas yang tinggi serta mempererat persahabatan antar daerah se-Indonesia.
+            Harapan kami, ajang ini dapat melahirkan atlet-atlet berprestasi, berakhlak mulia, dan
+            mampu mengibarkan bendera Merah Putih di kancah dunia.
+          </p>
+
+          <p>
+            Semoga perhelatan ini senantiasa berkesinambungan dan menjadi tolak ukur bagi
+            perkembangan olahraga bela diri Taekwondo. Mari kita jadikan semangat bertanding ini
+            sebagai jalan untuk <span class="italic">“Membangun Akhlak dengan Prestasi.”</span>
+          </p>
+
+          <p>
+            Sebagai Kwan Jang Nim Victory Taekwondo Club Bandung, saya ucapkan selamat
+            bertanding dan junjung tinggi sportivitas.
+          </p>
+
+          <div class="pt-2 sr">
+            <p class="font-bold text-[#1A2634] text-lg">Arie Kusuma</p>
+            <p class="text-gray-600">
+              Kwan Jang Nim Victory Taekwondo Club Bandung
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== GALERI ===================== -->
+<section id="galeri" class="relative py-20 bg-[#1E49BC] overflow-hidden">
+  <!-- Dekor sudut -->
+  <img src="images/border/border-2.svg" class="pointer-events-none absolute top-0 left-0 z-0 w-44 sm:w-40 md:w-44 lg:w-56 object-contain" alt="">
+  <img src="images/border/border-3.svg" class="pointer-events-none absolute top-0 right-0 z-0 w-44 sm:w-40 md:w-44 lg:w-56 object-contain" alt="">
+  <img src="images/border/border-1.svg" class="pointer-events-none absolute bottom-0 left-0 z-0 w-44 sm:w-40 md:w-44 lg:w-56 object-contain" alt="">
+  <img src="images/border/border-4.svg" class="pointer-events-none absolute bottom-0 right-0 z-0 w-44 sm:w-40 md:w-44 lg:w-56 object-contain" alt="">
+
+  <div class="max-w-7xl mx-auto px-8 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-center gap-4 mb-8">
+      <h2 class="text-white text-2xl md:text-3xl font-bold font-judul text-center sr">Galeri Pertandingan</h2>
+    </div>
+
+    <div class="flex items-center justify-between mb-6">
+      <span id="gallery-event-label"
+            class="inline-flex items-center gap-2 bg-white/10 text-white px-3 py-1.5 rounded-full text-sm md:text-base font-medium">
+        Event <span id="gallery-event-year" class="font-bold"></span>
+      </span>
+    </div>
+
+    <!-- GRID + Tombol kiri/kanan (desktop) -->
+    <div class="relative">
+      <!-- tombol kiri (desktop) -->
+      <button id="gallery-prev"
+              class="hidden md:flex absolute left-0 -translate-x-6 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-transparant shadow
+                    items-center justify-center"
+              aria-label="Sebelumnya" title="Sebelumnya">
+        <img src="images/galeri/icon-left.svg" alt="" class="w-10 h-10">
+      </button>
+
+      <!-- GRID 8 FOTO (2x4) -->
+      <div id="gallery-slide"
+          class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 transition-opacity duration-300 opacity-100 md:px-14">
+      </div>
+
+      <!-- tombol kanan (desktop) -->
+      <button id="gallery-next"
+              class="hidden md:flex absolute right-0 translate-x-6 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-transparant shadow
+                    items-center justify-center"
+              aria-label="Berikutnya" title="Berikutnya">
+        <img src="images/galeri/icon-right.svg" alt="" class="w-10 h-10">
+      </button>
+    </div>
+
+    <!-- Tombol mobile -->
+    <div class="mt-6 flex md:hidden items-center justify-center gap-3">
+      <button id="gallery-prev-m"
+              class="px-1 py-1 rounded-full bg-transparant text-sm font-semibold shadow"
+              aria-label="Sebelumnya" title="Sebelumnya">
+        <img src="images/galeri/icon-left.svg" alt="" class="w-10 h-10">
+      </button>
+      <button id="gallery-next-m"
+              class="px-1 py-1 rounded-full bg-transparant text-sm font-semibold shadow"
+              aria-label="Berikutnya" title="Berikutnya">
+        <img src="images/galeri/icon-right.svg" alt="" class="w-10 h-10">
+      </button>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-[#F3F6FA] text-gray-800 border-t border-gray-200 mt-0 relative">
+  <!-- Konten utama -->
+  <div class="max-w-7xl mx-auto px-8 sm:px-6 lg:px-8 pt-12 pb-24 md:pb-32">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+      <!-- Kiri -->
+      <div class="space-y-6 sr-stagger">
+        <div class="flex items-center space-x-4">
+          <img src="images/logo-event-victory/logo-head.svg" class="h-20" alt="Logo">
+        </div>
+        <p class="text-sm leading-relaxed font-deskripsi sr">
+          Victory National Open Taekwondo Championship adalah kejuaraan tahunan berskala nasional yang telah diselenggarakan sejak 2023. 
+          Ajang ini menjadi ruang pembinaan, sportivitas, dan prestasi bagi taekwondoin dari berbagai usia.
+        </p>
+        <!-- Sponsor + dekor tengah -->
+        <div class="flex items-center">
+          <img src="images/sponsor/hero-footer/sps-2.png" class="h-12" alt="Sponsor">
+
+          <!-- Dekor tengah -->
+          <img
+            src="images/footer/tengah.svg"
+            alt=""
+            aria-hidden="true"
+            class="hidden sm:block sm:ml-16 sm:h-16 sm:w-16 md:h-20 md:w-20 lg:h-24 lg:w-24"
+          />
+        </div>
+
+      </div>
+
+      <!-- Kanan -->
+      <div class="space-y-6 md:pl-24 relative sr-stagger">
+        <!-- Dekor kiri -->
+        <div class="relative md:flex md:items-center md:gap-3">
+          <img src="images/footer/atas.svg" alt="Decor Kontak"
+              class="absolute left-[-25px] sm:left-[-22px] top-1
+                      h-5 w-5 sm:h-6 sm:w-6
+                      md:static md:left-auto md:top-auto
+                      md:h-10 md:w-10 md:mr-3 select-none pointer-events-none" />
+          <h1 class="font-judul font-bold text-[#1E49BC]
+                    text-[25px] sm:text-2xl md:text-3xl">
+            Kontak Kami
+          </h1>
+        </div>
+
+        <!-- Container detail kontak -->
+        <div id="footer-contact"
+            class="mt-1 md:mt-6 space-y-4 md:space-y-5 ml-0 pl-0 md:pl-20 font-deskripsi">
+          <!-- Lokasi -->
+          <div class="grid grid-cols-[auto,1fr] items-start gap-3">
+            <img src="images/footer/location.svg" alt="" class="w-5 h-5 md:w-6 md:h-6">
+            <div class="text-[15px] sm:text-base leading-relaxed">
+              <p class="font-semibold">Victory Center</p>
+              <p>Gor Vapor Jln Banteng Dalam No 8, Turangga,</p>
+              <p>Kec. Lengkong Kota Bandung Jawa Barat 40264</p>
+            </div>
+          </div>
+
+          <!-- Telepon -->
+          <div class="grid grid-cols-[auto,1fr] items-start gap-3">
+            <img src="images/footer/phone.svg" alt="" class="w-5 h-5 md:w-6 md:h-6">
+            <p class="text-[15px] sm:text-base leading-relaxed">
+              <span class="font-semibold">Phone</span> +62 81224502323
+            </p>
+          </div>
+
+          <!-- Email -->
+          <div class="grid grid-cols-[auto,1fr] items-start gap-3">
+            <img src="images/footer/email.svg" alt="" class="w-5 h-5 md:w-6 md:h-6">
+            <p class="text-[15px] sm:text-base leading-relaxed">
+              <span class="font-semibold">Email</span> victorytkdbdg@gmail.com
+            </p>
+          </div>
+
+          <!-- Website -->
+          <div class="grid grid-cols-[auto,1fr] items-start gap-3">
+            <img src="images/footer/website.svg" alt="" class="w-5 h-5 md:w-6 md:h-6">
+            <p class="text-[15px] sm:text-base leading-relaxed">
+              <span class="font-semibold">Website</span>
+              <a href="https://victorytaekwondo.id" class="text-[#1E49BC] underline-offset-2 hover:underline">
+                victorytaekwondo.id
+              </a>
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Dekorasi sudut kiri & kanan -->
+  <img src="images/footer/kiri.svg"
+       class="absolute bottom-20 left-0 w-20 h-20 md:w-24 md:h-24"
+       alt="Decor Left">
+  <img src="images/footer/kanan.svg"
+       class="absolute bottom-24 right-16 w-20 h-20 md:w-24 md:h-24"
+       alt="Decor Right">
+
+  <!-- Copyright -->
+  <div class="bg-gray-800 text-center py-10 relative z-10">
+    <p class="text-sm sm:text-base font-deskripsi text-center">
+      © Victory National Open Taekwondo Championship 2025. All Rights Reserved.
+    </p>
+  </div>
+</footer>
+
+<!-- Gallery Popup Preview -->
+<div id="gallery-modal" class="fixed inset-0 z-[120] hidden">
+  <!-- backdrop -->
+  <div class="absolute inset-0 bg-black/70 modal-backdrop"></div>
+<div class="relative h-full w-full flex items-center justify-center p-3 sm:p-4 md:p-3">
+  <div class="relative inline-block">
+    <img id="gallery-modal-img"
+     src=""
+     alt="Pratinjau galeri"
+     class="h-auto
+            w-[92vw] sm:w-[92vw]
+            md:w-[76vw] lg:w-[70vw] xl:w-[66vw] 2xl:w-[60vw]
+            max-w-[1100px] xl:max-w-[1200px]
+            max-h-[82vh]
+            shadow-2xl object-contain select-none rounded-none" />
+    <button id="gallery-close"
+            class="absolute -top-12 -right-1 sm:-top-15 sm:-right-4 rounded-full bg-white/90 hover:bg-white shadow-md p-2"
+            aria-label="Tutup pratinjau">
+      <img src="images/icon-header/icon-close.svg" alt="" class="h-5 w-5 sm:h-6 sm:w-6">
+    </button>
+  </div>
+</div>
+
+
+  <!-- Load header via fetch + main script -->
+<script>
+  fetch('header.html')
+    .then(r => r.text())
+    .then(html => {
+      document.getElementById('header-mount').innerHTML = html;
+      if (window.initHeaderMenu) window.initHeaderMenu(); 
+
+      // ====== Penyesuaian header khusus INDEX (pastikan mobile "Event Kami" scroll ke #event) ======
+      const map = [
+        { text: 'Tentang',    target: 'tentang'  },
+        { text: 'Event Kami', target: 'event'    },
+        { text: 'Sambutan',   target: 'sambutan' },
+        { text: 'Galeri',     target: 'galeri'   },
+      ];
+
+      function wire(el, label, target){
+        if(!el) return;
+        el.textContent = label;
+        el.removeAttribute('onclick');
+        el.removeAttribute('href');
+        el.addEventListener('click', (e)=>{
+          e.preventDefault();
+          if (typeof scrollToSection === 'function') {
+            scrollToSection(target);
+          } else {
+            const node = document.getElementById(target);
+            if (node) node.scrollIntoView({behavior:'smooth', block:'start'});
+            else location.hash = '#' + target;
+          }
+        });
+      }
+
+      // Desktop buttons (4 pertama)
+      const desktopBtns = document.querySelectorAll('header nav .nav-btn');
+      desktopBtns.forEach((btn, i)=> wire(btn, map[i].text, map[i].target));
+
+      // Desktop CTA tetap "Pendaftaran" -> link ke pendaftaran.html
+      const desktopCTA = document.querySelector('header nav .btn-kontak');
+      if (desktopCTA){
+        desktopCTA.textContent = 'Pendaftaran';
+        desktopCTA.setAttribute('href','pendaftaran.html');
+        desktopCTA.onclick = null;
+      }
+
+      // Mobile buttons (4 pertama)
+      const mobileBtns = document.querySelectorAll('#mobile-menu .nav-btn');
+      mobileBtns.forEach((btn, i)=> wire(btn, map[i].text, map[i].target));
+
+      // Mobile CTA tetap "Pendaftaran"
+      const mobileCTA = document.querySelector('#mobile-menu .btn-kontak');
+      if (mobileCTA){
+        mobileCTA.textContent = 'Pendaftaran';
+        mobileCTA.setAttribute('href','pendaftaran.html');
+        mobileCTA.onclick = null;
+      }
+    })
+    .catch(e => console.error('Gagal memuat header:', e));
+</script>
+
+<script>
+  (function () {
+    const track = document.getElementById('event-track');
+    const prev  = document.getElementById('event-prev');
+    const next  = document.getElementById('event-next');
+    if (!track || !prev || !next) return;
+
+    const step = () => Math.min(track.clientWidth * 0.9, 420);
+
+    prev.addEventListener('click', () => track.scrollBy({ left: -step(), behavior: 'smooth' }));
+    next.addEventListener('click', () => track.scrollBy({ left:  step(), behavior: 'smooth' }));
+  })();
+</script>
+
+<script>
+  (function () {
+    const track = document.getElementById('event-track');
+    const prev  = document.getElementById('event-prev');
+    const next  = document.getElementById('event-next');
+    const dotsWrap = document.getElementById('event-dots');
+    if (!track) return;
+
+    const cards = Array.from(track.querySelectorAll('a.group')); 
+    const step = () => Math.min(track.clientWidth * 0.9, 420);
+
+    // ---- Desktop: tombol kiri/kanan
+    if (prev && next) {
+      prev.addEventListener('click', () => track.scrollBy({ left: -step(), behavior: 'smooth' }));
+      next.addEventListener('click', () => track.scrollBy({ left:  step(), behavior: 'smooth' }));
+    }
+
+    // ---- Mobile: indikator dots
+    if (dotsWrap && cards.length) {
+      const dots = cards.map((_, i) => {
+        const b = document.createElement('button');
+        b.type = 'button';
+        b.className = 'h-2.5 w-2.5 rounded-full bg-gray-300 transition-all';
+        b.setAttribute('aria-label', `Slide ${i + 1}`);
+        b.addEventListener('click', () => {
+          track.scrollTo({ left: cards[i].offsetLeft, behavior: 'smooth' });
+        });
+        dotsWrap.appendChild(b);
+        return b;
+      });
+
+      const base = 'h-2.5 rounded-full transition-all';
+
+      function setActiveByScroll() {
+        const pos = track.scrollLeft;
+        let closest = 0, min = Infinity;
+        for (let i = 0; i < cards.length; i++) {
+          const diff = Math.abs(cards[i].offsetLeft - pos);
+          if (diff < min) { min = diff; closest = i; }
+        }
+        dots.forEach((d, i) => {
+          d.className = base + (i === closest ? ' w-5 bg-[#1E49BC]' : ' w-2.5 bg-gray-300');
+        });
+      }
+
+      // inisialisasi + sync saat scroll/resize
+      setActiveByScroll();
+      let ticking = false;
+      track.addEventListener('scroll', () => {
+        if (!ticking) {
+          requestAnimationFrame(() => { setActiveByScroll(); ticking = false; });
+          ticking = true;
+        }
+      });
+      window.addEventListener('resize', setActiveByScroll);
+    }
+  })();
+</script>
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    const root = document.documentElement;
+    root.classList.remove('page-enter');
+    root.classList.add('page-loaded');
+  });
+</script>
+
+<script>
+  (function(){
+    // Observer yang nembak sekali saat elemen masuk viewport
+    const io = new IntersectionObserver((entries)=>{
+      entries.forEach((e)=>{
+        if(e.isIntersecting){
+          if(e.target.classList.contains('sr-stagger')){
+            e.target.classList.add('is-visible');
+          }else{
+            e.target.classList.add('is-visible');
+          }
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: "0px 0px -8% 0px" });
+
+    // Setup stagger index untuk tiap grup
+    document.querySelectorAll('.sr-stagger').forEach(group=>{
+      const items = Array.from(group.children).filter(el => el.nodeType === 1);
+      items.forEach((el, i)=> el.style.setProperty('--i', i));
+      io.observe(group);
+    });
+
+    // Observe item single
+    document.querySelectorAll('.sr').forEach(el=> io.observe(el));
+  })();
+</script>
+<script src="script.js"></script>
+</body>
+</html>
