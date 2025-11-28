@@ -24,9 +24,11 @@ This project focuses on:
 ```bash
 git clone https://github.com/FaiRefriandi/Website-Victory-Taekwondo.git
 ```
-2. Open the project folder
+
+### 2. Open the project folder
 cd Website-Victory-Taekwondo
-3. Run the website
+
+### 3. Run the website
 Simply open index.html in your browser.
 Or use Live Server (VS Code extension) for easier development.
 
@@ -41,6 +43,7 @@ JavaScript (ES6) — Basic interactivity
 
 This makes the project lightweight and easy to maintain or customize.
 
+
 ✨ Features
 🏠 Home Page — Introduction & navigation
 
@@ -51,6 +54,7 @@ This makes the project lightweight and easy to maintain or customize.
 🎨 CSS Styling — Custom UI styling through styles.css
 
 ⚙️ JavaScript Support — Basic interactive behavior
+
 
 
 📄 License
