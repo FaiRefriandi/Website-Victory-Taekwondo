@@ -26,7 +26,9 @@ git clone https://github.com/FaiRefriandi/Website-Victory-Taekwondo.git
 ```
 
 ### 2. Open the project folder
+```bash
 cd Website-Victory-Taekwondo
+```
 
 ### 3. Run the website
 Simply open index.html in your browser.
@@ -43,6 +45,7 @@ JavaScript (ES6) — Basic interactivity
 
 This makes the project lightweight and easy to maintain or customize.
 
+---
 
 ✨ Features
 🏠 Home Page — Introduction & navigation
@@ -55,7 +58,7 @@ This makes the project lightweight and easy to maintain or customize.
 
 ⚙️ JavaScript Support — Basic interactive behavior
 
-
+---
 
 📄 License
 This project is licensed under the MIT License.
